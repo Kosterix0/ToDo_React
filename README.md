@@ -1,5 +1,14 @@
-# Vue 3 + TypeScript + Vite
+# Todo React App  - (React, HTML/CSS, Vite)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Responsywna aplikacja do zarządzania zadaniami (To-Do App) stworzona w React. Pozwala na dodawanie zadań wraz z datą wykonania, oznaczanie ich jako ukończone oraz usuwanie.
+Aplikacja jest minimalistyczna, ale intuicyjna i łatwa w użyciu, co sprawia, że idealnie nadaje się do codziennego planowania obowiązków.
+
+* Desktop: 
+![Screenshot Desktop](./screenshots/desktop.png)
+
+
+* Mobile
+![Screenshot Mobile](./screenshots/mobile.png)
+
 
 Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
