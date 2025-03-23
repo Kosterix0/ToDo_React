@@ -81,6 +81,7 @@ export default function InputTask() {
         <input
           type="text"
           placeholder="Your tasks here!"
+          value={inputValue}
           className="task-input"
           onChange={(event) => {
             setInputValue(event.target.value);
@@ -89,6 +90,7 @@ export default function InputTask() {
         <input
           type="date"
           className="task-date"
+          value={dateValue}
           onChange={(event) => {
             setDateValue(event.target.value);
           }}
