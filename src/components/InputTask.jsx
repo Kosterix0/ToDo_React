@@ -1,19 +1,47 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function InputTask() {
-  const [inputValue, setInputValue] = useState();
-  const [dateValue, setDateValue] = useState();
-  const [curTasks, setCurTasks] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+  const [dateValue, setDateValue] = useState("");
+  const [curTasks, setCurTasks] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(curTasks));
+  }, [curTasks]);
 
   function handleSubmit() {
     if (inputValue && dateValue) {
-      curTasks.push({
-        task: inputValue,
-        date: dateValue,
-      });
-      setCurTasks([...curTasks]);
-      console.log(curTasks);
+      setCurTasks((prevTasks) => [
+        ...prevTasks,
+        {
+          task: inputValue,
+          date: dateValue,
+          decoration: "none",
+        },
+      ]);
+      setInputValue("");
+      setDateValue("");
     }
+  }
+
+  function checkTask(index) {
+    setCurTasks((prevTasks) =>
+      prevTasks.map((task, i) =>
+        i === index
+          ? {
+              ...task,
+              decoration: task.decoration === "none" ? "line-through" : "none",
+            }
+          : task
+      )
+    );
+  }
+
+  function deleteTask(index) {
+    setCurTasks((prevTasks) => prevTasks.filter((_, i) => i !== index));
   }
 
   function RenderTasks() {
@@ -22,12 +50,24 @@ export default function InputTask() {
         {curTasks.map((task, index) => {
           return (
             <div key={index} className="item quicksand-bold">
-              <button className="check-item material-symbols-outlined">
+              <button
+                className="check-item material-symbols-outlined"
+                onClick={() => {
+                  checkTask(index);
+                }}
+              >
                 check
               </button>
-              <p>{task.task}</p>
+              <p style={{ textDecoration: task.decoration }}>{task.task}</p>
               <p className="date-item">{task.date}</p>
-              <button className="delete-item material-symbols-outlined"></button>
+              <button
+                className="delete-item material-symbols-outlined"
+                onClick={() => {
+                  deleteTask(index);
+                }}
+              >
+                delete
+              </button>
             </div>
           );
         })}

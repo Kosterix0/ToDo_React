@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ManageCurrentDate from "./components/manageCurrentDate";
+import ManageCurrentDate from "./components/ManageCurrentDate";
 import InputTask from "./components/InputTask";
 
 function App() {
