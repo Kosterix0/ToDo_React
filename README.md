@@ -1,14 +1,30 @@
-# Todo React App  - (React, HTML/CSS, Vite)
+# ✅ Todo React App  - (React, HTML/CSS, Vite)
 
-Responsywna aplikacja do zarządzania zadaniami (To-Do App) stworzona w React. Pozwala na dodawanie zadań wraz z datą wykonania, oznaczanie ich jako ukończone oraz usuwanie.
-Aplikacja jest minimalistyczna, ale intuicyjna i łatwa w użyciu, co sprawia, że idealnie nadaje się do codziennego planowania obowiązków.
+Responsywna aplikacja do zarządzania zadaniami (To-Do App) stworzona w React.
 
-* Desktop: 
-![Screenshot Desktop](./screenshots/desktop.png)
+🎨**Screenshots** Desktop & Mobile
+ ![Screenshot Desktop](./screenshots/desktop.png)
 
-
-* Mobile
 ![Screenshot Mobile](./screenshots/mobile.png)
 
+## ✨ Funkcjonalności
+* **Dodawanie** nowych zadań
+* **Oznaczanie** zadań jako wykonane
+* **Usuwanie** zadań z listy
+* **Intuicyjny i responsywny interfejs użytkownika**
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🛠 Technologie
+* **React** – biblioteka do budowy interfejsu użytkownika
+* **CSS** – stylowanie aplikacji
+* **Vite** – szybkie środowisko dla React
+* **JavaScript (ES6+)** – logika aplikacji
+
+## 🚀 Uruchomienie aplikacji
+1. **Zainstaluj zależności**:
+   ```sh
+   npm install
+2. **Urochom aplikację**:
+   ```sh
+   npm start
+3. **Otwórz w przeglądarce**:
+   Wyswietlony: htttp://localhost:{PORT}
