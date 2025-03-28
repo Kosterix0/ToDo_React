@@ -183,7 +183,7 @@
   font-size: 18px;
 } */
 
-@media (max-width: 643px){
+/* @media (max-width: 643px){
   #root {
       background-image: url("assets/wallpaper_phone.png");
   }
@@ -261,7 +261,7 @@
   .day {
       font-size: 20px;
   }
-} 
+}  */
 
 
 
