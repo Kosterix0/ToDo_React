@@ -30,10 +30,10 @@ export default function ManageCurrentDate() {
 
   return (
     <div className="w-full md:h-3/10 flex flex-col md:justify-around items-center quicksand-bold h-1/4 justify-evenly">
-      <h1 className="tracking-[3px] md:text-7xl sm:text-5xl text-3xl">
+      <h1 className="tracking-[3px] md:text-[5vmin] text-[35px] font-bold">
         {dateHTML}
       </h1>
-      <p className="sm:text-[5vmin] text-[20px] font-medium">{dayHTML}</p>
+      <p className="md:text-[5vmin] text-[20px] font-medium">{dayHTML}</p>
     </div>
   );
 }
