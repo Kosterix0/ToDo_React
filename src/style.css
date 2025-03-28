@@ -1,24 +1,11 @@
-* {
+@import "tailwindcss";
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.quicksand-bold {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.material-symbols-outlined {
-font-variation-settings:
-'FILL' 0,
-'wght' 400,
-'GRAD' 0,
-'opsz' 24
-}
 
 #root {
   background-image: url("assets/wallpaper.png");
@@ -120,52 +107,6 @@ font-variation-settings:
 
 }
 
-.task-add:before{
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #d02828, #ff8800, #df9029, #e1a83e, #fff200, #e2d21f, #f0e742, #ede15a);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-.task-add:active {
-  color: #ffffff
-}
-
-.task-add:active:after {
-  background: transparent;
-}
-
-.task-add:before {
-  opacity: 1;
-}
-
-.task-add:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
 
 
 
@@ -240,7 +181,7 @@ font-variation-settings:
   width: 10%;
   min-width: 50px;
   font-size: 18px;
-}
+} */
 
 @media (max-width: 643px){
   #root {
@@ -319,5 +260,82 @@ font-variation-settings:
 
   .day {
       font-size: 20px;
+  }
+} 
+
+
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24
+}
+
+
+.task-add:before{
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #d02828, #ff8800, #df9029, #e1a83e, #fff200, #e2d21f, #f0e742, #ede15a);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.task-add:active {
+  color: #ffffff
+}
+
+.task-add:active:after {
+  background: transparent;
+}
+
+.task-add:before {
+  opacity: 1;
+}
+
+.task-add:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

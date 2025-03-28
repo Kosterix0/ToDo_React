@@ -29,9 +29,11 @@ export default function ManageCurrentDate() {
   const { dateHTML, dayHTML } = currentDate();
 
   return (
-    <div className="container-header quicksand-bold">
-      <h1 className="date">{dateHTML}</h1>
-      <p className="day">{dayHTML}</p>
+    <div className="w-full h-3/10 flex flex-col justify-around items-center quicksand-bold sm:h-1/4 sm:justify-evenly">
+      <h1 className="tracking-[3px] md:text-7xl sm:text-5xl text-3xl">
+        {dateHTML}
+      </h1>
+      <p className="md:text-7xl sm:text-5xl text-3xl font-medium">{dayHTML}</p>
     </div>
   );
 }
