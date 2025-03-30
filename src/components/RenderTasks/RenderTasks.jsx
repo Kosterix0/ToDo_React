@@ -12,7 +12,7 @@ export default function RenderTasks() {
       {tasks.map((task, index) => (
         <div
           key={index}
-          className="w-[95%] h-fit flex flex-col justify-around items-center text-[15px] md:w-full pb-[2%] gap-[3px] border-b-2 border-dotted border-black/30 md:flex-row quicksand-bold"
+          className="w-[95%] h-fit flex flex-col justify-around rounded-b-3xl items-center text-[15px] md:w-full pb-[2%] gap-[3px] border-b-2 border-dotted border-black/30 md:flex-row quicksand-bold"
         >
           <button
             className={`bg-[rgb(118,243,84)] hover:bg-[rgb(161,255,134)] hover:text-white active:bg-[rgb(208,249,196)] active:text-white material-symbols-outlined ${buttonRender}`}

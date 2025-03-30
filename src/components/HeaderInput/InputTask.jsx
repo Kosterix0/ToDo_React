@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
-import { TasksContext } from "./Context/tasks-context";
-import RenderTasks from "./RenderTasks/RenderTasks";
+import { TasksContext } from "../Context/tasks-context";
+import RenderTasks from "../RenderTasks/RenderTasks";
 
 export default function InputTask() {
   const { addTask } = useContext(TasksContext);
@@ -27,7 +27,7 @@ export default function InputTask() {
         />
         <input
           type="date"
-          className="w-full md:w-[20%] h-[65%] text-[20px] border-0 rounded-[15px] outline-none cursor-pointer relative z-0 bg-white"
+          className="w-full md:w-[20%] h-[65%] text-[15px] border-0 rounded-[15px] outline-none cursor-pointer relative z-0 bg-white"
           value={dateValue}
           onChange={(e) => setDateValue(e.target.value)}
         />
