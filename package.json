@@ -14,7 +14,7 @@
 
   
   },
-  "homepage": "https://kosterix0.github.io/nazwa-repozytorium",
+  "homepage": "https://kosterix0.github.io/ToDo_React",
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
     "react": "^19.0.0",
