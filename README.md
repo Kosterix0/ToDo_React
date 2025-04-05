@@ -1,4 +1,4 @@
-# ✅ Todo React App  - (React, HTML/CSS, Vite)
+# ✅ Todo React App  - (React, HTML, CSS/Tailwind, Vite)
 
 Responsywna aplikacja do zarządzania zadaniami (To-Do App) stworzona w React.
 
@@ -8,14 +8,15 @@ Responsywna aplikacja do zarządzania zadaniami (To-Do App) stworzona w React.
 ![Screenshot Mobile](./screenshots/mobile.png)
 
 ## ✨ Funkcjonalności
-* **Dodawanie** nowych zadań
+* **Dodawanie** nowych zadań z datą wykonania
 * **Oznaczanie** zadań jako wykonane
 * **Usuwanie** zadań z listy
+* **Sortowanie** zadań po dacie, statusie lub dacie wykonania
 * **Intuicyjny i responsywny interfejs użytkownika**
 
 ## 🛠 Technologie
 * **React** – biblioteka do budowy interfejsu użytkownika
-* **CSS** – stylowanie aplikacji
+* **CSS/Tailwind** – stylowanie aplikacji
 * **Vite** – szybkie środowisko dla React
 * **JavaScript (ES6+)** – logika aplikacji
 

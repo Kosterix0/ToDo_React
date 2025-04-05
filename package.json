@@ -9,9 +9,9 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://kosterix0.github.io/nazwa-repozytorium",
+  "homepage": "https://kosterix0.github.io/ToDo_React",
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
     "lucide-react": "^0.486.0",
